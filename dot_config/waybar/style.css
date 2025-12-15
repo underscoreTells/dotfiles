@@ -1,0 +1,102 @@
+* {
+    border: none;
+    border-radius: 15px;
+    font-family: "JetBrains Mono Nerd Font", "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(46, 52, 64, 0.2); /* Nord 0 - Darkest Polar Night, more transparent */
+}
+
+/* WORKSPACES */
+#workspaces {
+    margin: 6px 4px;
+    padding: 2px 5px;
+    background: #3B4252; /* Nord 1 - Container background */
+    border-radius: 15px;
+    border: none;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #D8DEE9;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    margin: 0 2px;
+}
+
+#workspaces button:hover {
+    background: #4C566A;
+    color: #ECEFF4;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    color: #2E3440; /* Dark text */
+    background-color: #88C0D0; /* Nord 8 - Cyan Pill */
+    border-radius: 10px;
+    min-width: 30px;
+    border-bottom: none;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    background-color: #BF616A;
+    color: #ECEFF4;
+    border-radius: 10px;
+}
+
+/* CLOCK */
+#clock {
+    background-color: #3B4252; /* Nord 1 */
+    color: #ECEFF4;
+    padding: 0 15px;
+    margin: 6px 4px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+}
+
+/* MODULES RIGHT */
+/* Maximalist Pills */
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#battery,
+#tray,
+#custom-power {
+    padding: 0 14px;
+    margin: 6px 3px;
+    background-color: #3B4252; /* Nord 1 - Container background */
+    color: #ECEFF4; /* Light text for contrast on dark background */
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+/* Removed individual colors to match workspace/clock style */
+
+#battery.charging, #battery.plugged {
+    background-color: #3B4252;
+    color: #ECEFF4;
+}
+
+#tray {
+    margin-right: 10px;
+    border: none;
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #f7768e;
+}
+
