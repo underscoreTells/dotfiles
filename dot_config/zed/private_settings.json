@@ -98,8 +98,8 @@
   "agent": {
     "always_allow_tool_actions": true,
     "default_model": {
-      "provider": "Opencode Zed",
-      "model": "big-pickle"
+      "provider": "Fireworks",
+      "model": "fireworks/glm-4p6"
     },
     "model_parameters": [],
     "default_profile": "ask"

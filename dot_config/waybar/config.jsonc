@@ -10,11 +10,9 @@
     "modules-left": [
       "hyprland/workspaces",
       "sway/workspaces",
-      "wlr/workspaces"
+      "wlr/workspaces",
     ],
-    "modules-center": [
-      "clock"
-    ],
+    "modules-center": ["clock"],
     "modules-right": [
       "pulseaudio",
       "network",
@@ -23,44 +21,38 @@
       "memory",
       "battery",
       "tray",
-      "custom/power"
+      "custom/power",
     ],
     "hyprland/workspaces": {
       "format": "{name}",
-      "on-click": "activate"
+      "on-click": "activate",
     },
     "sway/workspaces": {
       "format": "{name}",
-      "on-click": "activate"
+      "on-click": "activate",
     },
     "clock": {
       "format": "{:%H:%M  %Y-%m-%d}",
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
     "cpu": {
       "format": "CPU {usage}%",
-      "tooltip": false
+      "tooltip": false,
     },
     "memory": {
-      "format": "MEM {}%"
+      "format": "MEM {}%",
     },
     "battery": {
       "states": {
         "good": 95,
         "warning": 30,
-        "critical": 15
+        "critical": 15,
       },
       "format": "{icon} {capacity}%",
       "format-charging": " {capacity}%",
       "format-plugged": " {capacity}%",
       "format-alt": "{time} {icon}",
-      "format-icons": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "format-icons": ["", "", "", "", ""],
     },
     "network": {
       "format-wifi": "     {essid} ({signalStrength}%)",
@@ -68,7 +60,7 @@
       "tooltip-format": "{ifname} via {gwaddr}",
       "format-linked": "{ifname} (No IP)",
       "format-disconnected": "⚠ Disconnected",
-      "format-alt": "{ifname}: {ipaddr}/{cidr}"
+      "format-alt": "{ifname}: {ipaddr}/{cidr}",
     },
     "pulseaudio": {
       "format": "{icon}  {volume}%",
@@ -82,13 +74,9 @@
         "phone": "",
         "portable": "",
         "car": "",
-        "default": [
-          "",
-          "",
-          ""
-        ]
+        "default": ["", "", ""],
       },
-      "on-click": "pavucontrol"
+      "on-click": "pavucontrol",
     },
     "bluetooth": {
       "format": " {status}",
@@ -98,13 +86,13 @@
       "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
       "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
       "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-      "on-click": "bluetoothctl"
+      "on-click": "~/.config/waybar/bluetooth-menu.sh",
     },
     "custom/power": {
       "format": " ",
       "tooltip": false,
-      "on-click": "~/.config/waybar/power-menu.sh"
-    }
+      "on-click": "~/.config/waybar/power-menu.sh",
+    },
   },
   {
     "output": "DP-1",
@@ -117,11 +105,9 @@
     "modules-left": [
       "hyprland/workspaces",
       "sway/workspaces",
-      "wlr/workspaces"
+      "wlr/workspaces",
     ],
-    "modules-center": [
-      "clock"
-    ],
+    "modules-center": ["clock"],
     "modules-right": [
       "pulseaudio",
       "network",
@@ -130,44 +116,38 @@
       "memory",
       "battery",
       "tray",
-      "custom/power"
+      "custom/power",
     ],
     "hyprland/workspaces": {
       "format": "{name}",
-      "on-click": "activate"
+      "on-click": "activate",
     },
     "sway/workspaces": {
       "format": "{name}",
-      "on-click": "activate"
+      "on-click": "activate",
     },
     "clock": {
       "format": "{:%H:%M  %Y-%m-%d}",
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
     "cpu": {
       "format": "CPU {usage}%",
-      "tooltip": false
+      "tooltip": false,
     },
     "memory": {
-      "format": "MEM {}%"
+      "format": "MEM {}%",
     },
     "battery": {
       "states": {
         "good": 95,
         "warning": 30,
-        "critical": 15
+        "critical": 15,
       },
       "format": "{icon} {capacity}%",
       "format-charging": " {capacity}%",
       "format-plugged": " {capacity}%",
       "format-alt": "{time} {icon}",
-      "format-icons": [
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
+      "format-icons": ["", "", "", "", ""],
     },
     "network": {
       "format-wifi": "     {essid} ({signalStrength}%)",
@@ -175,7 +155,7 @@
       "tooltip-format": "{ifname} via {gwaddr}",
       "format-linked": "{ifname} (No IP)",
       "format-disconnected": "⚠ Disconnected",
-      "format-alt": "{ifname}: {ipaddr}/{cidr}"
+      "format-alt": "{ifname}: {ipaddr}/{cidr}",
     },
     "pulseaudio": {
       "format": "{icon}  {volume}%",
@@ -189,13 +169,9 @@
         "phone": "",
         "portable": "",
         "car": "",
-        "default": [
-          "",
-          "",
-          ""
-        ]
+        "default": ["", "", ""],
       },
-      "on-click": "pavucontrol"
+      "on-click": "pavucontrol",
     },
     "bluetooth": {
       "format": " {status}",
@@ -205,12 +181,12 @@
       "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
       "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
       "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-      "on-click": "bluetoothctl"
+      "on-click": "~/.config/waybar/bluetooth-menu.sh",
     },
     "custom/power": {
       "format": " ",
       "tooltip": false,
-      "on-click": "~/.config/waybar/power-menu.sh"
-    }
-  }
+      "on-click": "~/.config/waybar/power-menu.sh",
+    },
+  },
 ]
