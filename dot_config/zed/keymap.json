@@ -1,0 +1,51 @@
+[
+  {
+    "context": "Editor || Dock",
+    "bindings": {
+      "alt-a": "agent::ToggleFocus",
+      "alt-n": "terminal_panel::Toggle",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-m": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual)",
+    "bindings": {
+      "space a ?": "agent::ToggleModelSelector",
+      "space a n": "agent::NewThread",
+      "space a h": "agent::OpenHistory",
+      "space a t": "workspace::ToggleRightDock",
+      "shift-l": [
+        "workspace::SendKeystrokes",
+        "ctrl-pagedown"
+      ],
+      "shift-h": [
+        "workspace::SendKeystrokes",
+        "ctrl-pageup"
+      ],
+      "space b d": [
+        "workspace::SendKeystrokes",
+        ": q ! enter"
+      ],
+      "space a k": "agent::Keep",
+      "space a enter": "agent::KeepAll",
+      "space a r": "agent::Reject",
+      "space a backspace": "agent::RejectAll"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "space a a": "agent::AddSelectionToThread"
+    }
+  },
+  {
+    "context": "Editor && edit_prediction_conflict",
+    "bindings": {
+      "alt-w": "editor::AcceptEditPrediction"
+    }
+  }
+]
