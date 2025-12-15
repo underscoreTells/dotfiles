@@ -68,6 +68,7 @@ window#waybar {
 /* Maximalist Pills */
 #pulseaudio,
 #network,
+#bluetooth,
 #cpu,
 #memory,
 #battery,
