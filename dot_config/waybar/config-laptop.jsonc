@@ -1,14 +1,15 @@
 [
   {
     "reload_style_on_change": true,
-    "output": "HDMI-A-1",
-    "width": 1440,
+    "output": "*",
     "margin-top": 10,
     "layer": "top",
     "position": "top",
     "height": 30,
     "spacing": 4,
+
     "include": "~/.config/waybar/workspaces.jsonc",
+
     "modules-left": [
       "hyprland/workspaces",
       "group/launcher",
@@ -21,6 +22,7 @@
       "group/device_info_tray",
       "custom/power",
     ],
+
     "group/tray_group": {
       "orientation": "horizontal",
       "drawer": {
@@ -30,13 +32,14 @@
       "modules": ["custom/tray_icon", "tray"],
     },
     "custom/tray_icon": {
-      "format": "\u276d",
+      "format": "❭",
       "tooltip": false,
     },
     "tray": {
       "icon-size": 15,
       "spacing": 8,
     },
+
     "group/launcher": {
       "orientation": "horizontal",
       "modules": [
@@ -66,10 +69,12 @@
       "tooltip": false,
       "on-click": "~/.local/bin/zed",
     },
+
     "clock": {
       "format": "{:%H:%M  %Y-%m-%d}",
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
+
     "battery": {
       "states": {
         "good": 95,
@@ -82,6 +87,7 @@
       "format-alt": "{time} {icon}",
       "format-icons": ["", "", "", "", ""],
     },
+
     "group/connections": {
       "orientation": "horizontal",
       "modules": ["network", "bluetooth"],
@@ -94,6 +100,7 @@
       "format-disconnected": "⚠ Disconnected",
       "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     },
+
     "group/audio": {
       "orientation": "horizontal",
       "drawer": {
@@ -123,6 +130,7 @@
       "max": 100,
       "orientation": "horizontal",
     },
+
     "bluetooth": {
       "format": " {status}",
       "format-connected": " {device_alias}",
@@ -133,6 +141,7 @@
       "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
       "on-click": "~/.config/waybar/bluetooth-menu.sh",
     },
+
     "group/device_info_tray": {
       "orientation": "horizontal",
       "drawer": {
@@ -142,7 +151,7 @@
       "modules": ["custom/device_info_icon", "group/device_info"],
     },
     "custom/device_info_icon": {
-      "format": "\u276c",
+      "format": "❬",
       "tooltip": false,
     },
     "group/device_info": {
@@ -156,28 +165,7 @@
     "memory": {
       "format": "󰍹   {}%",
     },
-    "custom/power": {
-      "format": " ",
-      "tooltip": false,
-      "on-click": "~/.config/waybar/power-menu.sh",
-    },
-  },
-  {
-    "output": "DP-1",
-    "width": 810,
-    "margin-top": 10,
-    "layer": "top",
-    "position": "top",
-    "height": 30,
-    "spacing": 4,
-    "include": "~/.config/waybar/workspaces.jsonc",
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["custom/power"],
-    "clock": {
-      "format": "{:%H:%M  %Y-%m-%d}",
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    },
+
     "custom/power": {
       "format": " ",
       "tooltip": false,

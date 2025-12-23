@@ -1,103 +1,195 @@
 * {
     border: none;
     border-radius: 15px;
-    font-family: "JetBrains Mono Nerd Font", "Roboto", sans-serif;
+    font-family: "jetbrains mono nerd font", "roboto", sans-serif;
     font-size: 13px;
-    font-weight: bold;
     min-height: 0;
+    font-weight: bold;
 }
 
 window#waybar {
-    background-color: rgba(46, 52, 64, 0.2); /* Nord 0 - Darkest Polar Night, more transparent */
+    background-color: rgba(
+        46,
+        52,
+        64,
+        0.2
+    ); /* nord 0 - darkest polar night, more transparent */
+    border: 1px solid rgba(236, 239, 244, 0.02);
 }
 
-/* WORKSPACES */
+tooltip {
+    background: #3b4252; /* nord 1 - container background */
+    border-radius: 12px;
+    border: 1px solid #eceff4;
+    color: #eceff4;
+}
+
+/* workspaces */
 #workspaces {
     margin: 6px 4px;
-    padding: 2px 5px;
-    background: #3B4252; /* Nord 1 - Container background */
+    padding: 0 8px;
+    background: #3b4252; /* nord 1 - container background */
     border-radius: 15px;
     border: none;
 }
 
 #workspaces button {
-    padding: 0 8px;
+    padding: 0 2px 2px 2px;
     background-color: transparent;
-    color: #D8DEE9;
+    color: #d8dee9;
     transition: all 0.3s ease;
     border-radius: 10px;
     margin: 0 2px;
 }
 
 #workspaces button:hover {
-    background: #4C566A;
-    color: #ECEFF4;
+    background: #4c566a;
+    color: #eceff4;
     box-shadow: none;
     text-shadow: none;
 }
 
 #workspaces button.focused,
 #workspaces button.active {
-    color: #2E3440; /* Dark text */
-    background-color: #88C0D0; /* Nord 8 - Cyan Pill */
+    color: #88c0d0; /* dark text */
     border-radius: 10px;
-    min-width: 30px;
     border-bottom: none;
     text-shadow: none;
     font-weight: bold;
 }
 
 #workspaces button.urgent {
-    background-color: #BF616A;
-    color: #ECEFF4;
+    background-color: #bf616a;
+    color: #eceff4;
     border-radius: 10px;
 }
 
-/* CLOCK */
+/* tray */
+#custom-tray_icon {
+    padding: 0 4px 0 2;
+    background: transparent;
+    border-radius: 15px;
+    border: none;
+    color: #eceff4;
+}
+
+#tray {
+    background: transparent;
+    margin: 0 15px 0 2px;
+}
+
+/* LAUNCHER */
+#launcher {
+    margin: 6px 0px;
+    padding: 0 8px;
+    background: #3b4252; /* nord 1 - container background */
+    border-radius: 15px;
+    border: none;
+}
+
+#custom-terminal {
+    padding: 0 15px;
+    border: none;
+    color: #eceff4;
+}
+#custom-browser,
+#custom-files,
+#custom-zed {
+    padding: 0 20px 0 15px;
+    border: none;
+    color: #eceff4;
+}
+
+#custom-terminal:hover,
+#custom-browser:hover,
+#custom-files:hover,
+#custom-zed:hover {
+    background-color: #434c5e; /* nord 2 - slightly darker for hover */
+    border-radius: 15px;
+}
+
+/* clock */
 #clock {
-    background-color: #3B4252; /* Nord 1 */
-    color: #ECEFF4;
+    background-color: #3b4252; /* nord 1 */
+    color: #eceff4;
     padding: 0 15px;
     margin: 6px 4px;
     border-radius: 15px;
     border: none;
+}
+
+/* modules right */
+#pulseaudio {
+    background-color: #3b4252;
+    border-radius: 12px;
+    margin: 6px 3px;
+    padding: 0 14px;
+    color: #eceff4;
     font-weight: bold;
 }
 
-/* MODULES RIGHT */
-/* Maximalist Pills */
-#pulseaudio,
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 2px;
+    min-width: 80px;
+    border-radius: 5px;
+    background: black;
+}
+
+#pulseaudio-slider highlight {
+    min-width: 0px;
+    border-radius: 5px;
+    background: #eceff4;
+}
+
+#custom-device_info_icon {
+    padding: 0 2px;
+    background: transparent;
+    border-radius: 15px;
+    border: none;
+    color: #eceff4;
+}
+
+#connections,
+#device_info {
+    margin: 6px 4px;
+    padding: 0 8px;
+    background: #3b4252; /* nord 1 - container background */
+    border-radius: 15px;
+    border: none;
+    color: #eceff4;
+}
+
 #network,
-#bluetooth,
+#bluetooth {
+    margin: 0 8px;
+}
+
 #cpu,
-#memory,
-#battery,
-#tray,
+#memory {
+    margin: 0 4px;
+}
+
 #custom-power {
     padding: 0 14px;
     margin: 6px 3px;
-    background-color: #3B4252; /* Nord 1 - Container background */
-    color: #ECEFF4; /* Light text for contrast on dark background */
+    background-color: #3b4252; /* nord 1 - container background */
+    color: #eceff4; /* light text for contrast on dark background */
     border-radius: 12px;
-    font-weight: bold;
 }
 
-/* Removed individual colors to match workspace/clock style */
+/* removed individual colors to match workspace/clock style */
 
-#battery.charging, #battery.plugged {
-    background-color: #3B4252;
-    color: #ECEFF4;
+#battery.charging,
+#battery.plugged {
+    background-color: #3b4252;
+    color: #eceff4;
 }
-
-#tray {
-    margin-right: 10px;
-    border: none;
-}
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #f7768e;
-}
-
