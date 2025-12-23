@@ -1,0 +1,153 @@
+configuration {
+    modi: "run,drun,window";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 󰕰  Window";
+    display-Network: " 󰤨  Network";
+    sidebar-mode: true;
+    font: "JetBrains Mono Nerd Font Bold 12";
+}
+
+* {
+    bg-col:  #2e3440;
+    bg-col-light: #2e3440;
+    border-col: #2e3440;
+    selected-col: #2e3440;
+    blue: #81a1c1;
+    fg-col: #d8dee9;
+    fg-col2: #eceff4;
+    grey: #4c566a;
+    
+    bg-window: #2e344099;
+    overlay-bg: #00000066;
+}
+
+element-text, element-icon , mode-switcher {
+    background-color: transparent;
+    text-color:       inherit;
+}
+
+window {
+    fullscreen: true;
+    transparency: "real";
+    background-color: @overlay-bg;
+    
+    /* Layout: Center the menu using a 3-column layout */
+    orientation: horizontal;
+    children: [ "dummy-left", "main-container", "dummy-right" ];
+    padding: 0px;
+    border: 0px;
+}
+
+/* Side Spacers to center the menu horizontally */
+dummy-left, dummy-right {
+    expand: true;
+    background-color: transparent;
+}
+
+/* The vertical column that contains the menu */
+main-container {
+    orientation: vertical;
+    children: [ "dummy-top", "mainbox", "dummy-bottom" ];
+    expand: false;
+    width: 600px; /* Fixed width for the menu! */
+    background-color: transparent;
+}
+
+/* Top/Bottom Spacers to center the menu vertically */
+dummy-top, dummy-bottom {
+    expand: true;
+    background-color: transparent;
+}
+
+/* The Actual Menu Box */
+mainbox {
+    background-color: @bg-window;
+    children: [inputbar, listview];
+    padding: 20px;
+    border: 1px;
+    border-color: @blue;
+    border-radius: 5px;
+    expand: false; /* Do not stretch to fill height */
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+prompt {
+    background-color: transparent;
+    padding: 6px;
+    text-color: @blue;
+    border-radius: 3px;
+    margin: 20px 0px 0px 20px;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    padding: 6px;
+    margin: 20px 0px 0px 10px;
+    text-color: @fg-col;
+    background-color: transparent;
+}
+
+listview {
+    border: 0px 0px 0px;
+    padding: 6px 0px 0px;
+    margin: 10px 0px 0px 20px;
+    columns: 1;
+    lines: 6;
+    background-color: transparent;
+}
+
+element {
+    padding: 5px;
+    background-color: transparent;
+    text-color: @fg-col;
+    border-radius: 5px;
+    margin: 0px 10px 0px 0px;
+}
+
+element normal.normal, element alternate.normal {
+    background-color: transparent;
+    text-color: @fg-col;
+}
+
+element selected.normal {
+    background-color: @grey;
+    text-color: @blue;
+}
+
+element-icon {
+    size: 25px;
+}
+
+mode-switcher {
+    spacing: 0;
+}
+
+button {
+    padding: 10px;
+    background-color: transparent;
+    text-color: @grey;
+    vertical-align: 0.5; 
+    horizontal-align: 0.5;
+}
+
+button selected {
+  background-color: transparent;
+  text-color: @blue;
+}

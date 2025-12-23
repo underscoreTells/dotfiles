@@ -1,0 +1,51 @@
+window {
+    margin: 0px;
+    border: 2px solid #3B4252; /* Nord 1 */
+    background-color: rgba(46, 52, 64, 0.9); /* Nord 0 */
+    border-radius: 15px;
+    font-family: "JetBrains Mono Nerd Font", "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#input {
+    margin: 5px;
+    padding: 4px;
+    border: none;
+    color: #ECEFF4;
+    background-color: #3B4252; /* Nord 1 */
+    border-radius: 10px;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+#text {
+    margin: 5px;
+    border: none;
+    color: #ECEFF4;
+}
+
+#entry:selected {
+    background-color: #88C0D0; /* Nord 8 */
+    color: #2E3440;
+    border-radius: 10px;
+}
+
+#entry:selected #text {
+    color: #2E3440;
+}

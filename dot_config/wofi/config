@@ -1,0 +1,5 @@
+mode=dmenu
+hide_scroll=true
+show="dmenu"
+width=250
+height=210
