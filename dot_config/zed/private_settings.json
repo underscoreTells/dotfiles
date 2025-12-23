@@ -5,6 +5,18 @@
         "api_url": "https://api.fireworks.ai/inference/v1",
         "available_models": [
           {
+            "name": "fireworks/glm-4p7",
+            "max_tokens": 198000,
+            "max_output_tokens": 128000,
+            "max_completion_tokens": 128000,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": false,
+            },
+          },
+          {
             "name": "fireworks/glm-4p6",
             "max_tokens": 198000,
             "max_output_tokens": 128000,
@@ -13,8 +25,8 @@
               "tools": true,
               "images": false,
               "parallel_tool_calls": true,
-              "prompt_cache_key": false
-            }
+              "prompt_cache_key": false,
+            },
           },
           {
             "name": "fireworks/kimi-k2-thinking",
@@ -25,10 +37,10 @@
               "tools": true,
               "images": false,
               "parallel_tool_calls": true,
-              "prompt_cache_key": false
-            }
-          }
-        ]
+              "prompt_cache_key": false,
+            },
+          },
+        ],
       },
       "Opencode Zed": {
         "api_url": "https://opencode.ai/zen/v1/responses",
@@ -42,8 +54,8 @@
               "tools": true,
               "images": false,
               "parallel_tool_calls": true,
-              "prompt_cache_key": false
-            }
+              "prompt_cache_key": false,
+            },
           },
           {
             "name": "kimi-k2-thinking",
@@ -54,8 +66,8 @@
               "tools": true,
               "images": false,
               "parallel_tool_calls": true,
-              "prompt_cache_key": false
-            }
+              "prompt_cache_key": false,
+            },
           },
           {
             "name": "big-pickle",
@@ -66,43 +78,41 @@
               "tools": true,
               "images": false,
               "parallel_tool_calls": true,
-              "prompt_cache_key": false
-            }
-          }
-        ]
-      }
-    }
+              "prompt_cache_key": false,
+            },
+          },
+        ],
+      },
+    },
   },
   "icon_theme": "Catppuccin Frappé",
   "agent_servers": {
     "Opencode": {
       "type": "custom",
       "command": "/home/alext/.opencode/bin/opencode",
-      "args": [
-        "acp"
-      ],
-      "env": {}
-    }
+      "args": ["acp"],
+      "env": {},
+    },
   },
   "edit_predictions": {
     "mode": "subtle",
     "copilot": {
       "proxy": null,
-      "proxy_no_verify": null
+      "proxy_no_verify": null,
     },
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": false,
   },
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "zed",
   },
   "agent": {
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "Fireworks",
-      "model": "fireworks/glm-4p6"
+      "model": "fireworks/glm-4p6",
     },
     "model_parameters": [],
-    "default_profile": "ask"
+    "default_profile": "ask",
   },
   "vim_mode": true,
   "ui_font_family": "Inconsolata Nerd Font",
@@ -112,10 +122,10 @@
   "theme": {
     "mode": "system",
     "light": "Nord Light",
-    "dark": "Nord Dark"
+    "dark": "Nord Dark",
   },
   "relative_line_numbers": "enabled",
   "auto_signature_help": true,
   "auto_update": false,
-  "close_on_file_delete": true
+  "close_on_file_delete": true,
 }
