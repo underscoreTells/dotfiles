@@ -33,7 +33,7 @@ function M.apply(ctx)
   end
 
   ctx.host_autostart = {
-    "openrgb --startminimized --profile Default",
+    "~/.config/hypr/scripts/openrgb-autostart.sh",
     "xrandr --output DP-1 --primary",
   }
 end
