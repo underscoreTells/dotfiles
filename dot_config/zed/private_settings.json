@@ -1,4 +1,20 @@
 {
+  "agent_servers": {
+    "codex-acp": {
+      "default_config_options": {
+        "model": "gpt-5.3-codex"
+      },
+      "favorite_config_option_values": {
+        "model": [
+          "gpt-5.3-codex"
+        ]
+      },
+      "type": "registry"
+    },
+    "opencode": {
+      "type": "registry"
+    }
+  },
   "language_models": {
     "openai_compatible": {
       "Fireworks": {
@@ -86,15 +102,8 @@
     },
   },
   "icon_theme": "Catppuccin Frappé",
-  "agent_servers": {
-    "Opencode": {
-      "type": "custom",
-      "command": "/home/alext/.opencode/bin/opencode",
-      "args": ["acp"],
-      "env": {},
-    },
-  },
   "edit_predictions": {
+    "provider": "zed",
     "mode": "subtle",
     "copilot": {
       "proxy": null,
@@ -102,14 +111,13 @@
     },
     "enabled_in_text_threads": false,
   },
-  "features": {
-    "edit_prediction_provider": "zed",
-  },
   "agent": {
-    "always_allow_tool_actions": true,
+    "tool_permissions": {
+      "default": "allow",
+    },
     "default_model": {
       "provider": "Fireworks",
-      "model": "fireworks/glm-4p6",
+      "model": "fireworks/glm-4p7",
     },
     "model_parameters": [],
     "default_profile": "ask",
@@ -120,7 +128,7 @@
   "ui_font_size": 15.5,
   "buffer_font_size": 15.5,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "Nord Light",
     "dark": "Nord Dark",
   },
