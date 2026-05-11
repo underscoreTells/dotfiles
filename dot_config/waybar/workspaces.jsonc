@@ -5,6 +5,5 @@
       "active": "\u25c8",
       "default": "\u25c7",
     },
-    "on-click": "activate",
   },
 }

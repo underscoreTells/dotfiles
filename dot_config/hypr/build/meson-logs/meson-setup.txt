@@ -1,0 +1,129 @@
+The Meson build system
+Version: 1.11.1
+Source dir: /tmp/opencode/waybar-main
+Build dir: /home/alext/.config/hypr/build
+Build type: native build
+Project name: waybar
+Project version: 0.15.0
+C compiler for the host machine: cc (gcc 16.1.1 "cc (GCC) 16.1.1 20260430")
+C linker for the host machine: cc ld.bfd 2.46.0
+C++ compiler for the host machine: c++ (gcc 16.1.1 "c++ (GCC) 16.1.1 20260430")
+C++ linker for the host machine: c++ ld.bfd 2.46.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C++ supports link arguments -lc++fs: NO 
+Compiler for C++ supports link arguments -lstdc++fs: YES 
+Program git found: YES (/usr/bin/git)
+Checking if "nl_langinfo with _NL_TIME_WEEK_1STDAY, _NL_TIME_FIRST_WEEKDAY" links: YES 
+Run-time dependency threads found: YES
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency fmt found: YES 12.1.0
+Run-time dependency spdlog found: YES 1.17.0
+Run-time dependency wayland-client found: YES 1.25.0
+Run-time dependency wayland-cursor found: YES 1.25.0
+Run-time dependency wayland-protocols found: YES 1.48
+Run-time dependency gtkmm-3.0 found: YES 3.24.10
+Run-time dependency dbusmenu-gtk3-0.4 found: YES 16.04.0
+Run-time dependency gio-unix-2.0 found: YES 2.88.1
+Run-time dependency jsoncpp found: YES 1.9.6
+Run-time dependency sigc++-2.0 found: YES 2.12.1
+Found CMake: /usr/bin/cmake (4.3.2)
+Run-time dependency libinotify found: NO  (tried pkg-config and cmake)
+Run-time dependency epoll-shim found: NO  (tried pkg-config and cmake)
+Run-time dependency libinput found: YES 1.31.1
+Run-time dependency libnl-3.0 found: YES 3.12.0
+Run-time dependency libnl-genl-3.0 found: YES 3.12.0
+Run-time dependency upower-glib found: YES 1.91.2
+Run-time dependency libpipewire-0.3 found: YES 1.6.4
+Run-time dependency playerctl found: YES 2.4.1
+Run-time dependency libpulse found: YES 17.0-98-gb096
+Run-time dependency libudev found: YES 260
+Run-time dependency libevdev found: YES 1.13.6
+Run-time dependency libmpdclient found: YES 2.23
+Run-time dependency xkbregistry found: YES 1.13.1
+Run-time dependency jack found: YES 1.9.22
+Run-time dependency wireplumber-0.5 found: YES 0.5.14
+Run-time dependency libgps found: YES 3.27.5
+Library sndio found: YES
+Checking for function "sioctl_open" with dependency -lsndio: YES 
+Run-time dependency gtk-layer-shell-0 found: YES 0.10.1
+Run-time dependency systemd found: YES 260
+Computing int of "__cpp_lib_chrono" : 201907
+Configuring waybar.service using configuration
+Run-time dependency libcava found: NO  (tried pkg-config and cmake)
+Looking for a fallback subproject for the dependency libcava
+Downloading libcava source from https://github.com/LukashonakV/cava/archive/0.10.7.tar.gz
+
+Executing subproject libcava 
+
+Project name: cava
+Project version: 0.10.7
+C compiler for the host machine: cc (gcc 16.1.1 "cc (GCC) 16.1.1 20260430")
+C linker for the host machine: cc ld.bfd 2.46.0
+Has header "iniparser.h" : NO 
+Has header "iniparser/iniparser.h" : YES 
+Library iniparser found: YES
+Checking for function "iniparser_load" with dependency -liniparser: YES 
+Library m found: YES
+Checking for function "sqrt" with dependency -lm: YES 
+Run-time dependency fftw3 found: YES 3.3.11
+Dependency threads for host machine found: YES unknown (cached)
+Has header "pthread.h" with dependency threads: YES 
+Checking for function "pthread_create" with dependency threads: YES 
+Check usable header "alloca.h" : YES 
+Run-time dependency ncursesw found: YES 6.6.20251230
+Checking for function "initscr" with dependency ncursesw: YES 
+Library asound found: YES
+Checking for function "snd_pcm_open" with dependency -lasound: YES 
+Library portaudio found: YES
+Checking for function "Pa_Initialize" with dependency -lportaudio: YES 
+Dependency libpulse for host machine found: YES 17.0-98-gb096 (cached)
+Library pulse-simple found: YES
+Checking for function "pa_simple_new" with dependencies libpulse, -lpulse-simple: YES 
+Library sndio found: YES
+Checking for function "sio_open" with dependency -lsndio: YES 
+Dependency libpipewire-0.3 for host machine found: YES 1.6.4 (cached)
+Checking for function "pw_stream_connect" with dependency libpipewire-0.3: YES 
+Run-time dependency sdl2 found: YES 2.32.68
+Run-time dependency gl found: YES 1.2
+Checking for function "SDL_Init" with dependency sdl2: YES 
+Check usable header "sys/soundcard.h" : YES 
+../../../../tmp/opencode/waybar-main/subprojects/cava-0.10.7/meson.build:233: WARNING: No oss dev files found. building without oss
+Dependency jack for host machine found: YES 1.9.22 (cached)
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Build targets in project: 1
+Subproject libcava finished.
+
+Dependency libcava for host machine from subproject subprojects/cava-0.10.7 found: YES 0.10.7
+Run-time dependency epoxy found: YES 1.5.10
+Program wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Program gdbus-codegen found: YES (/usr/bin/gdbus-codegen)
+Build-time dependency gio-2.0 found: YES 2.88.1
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Found CMake: /usr/bin/cmake (4.3.2)
+Build-time dependency scdoc found: NO  (tried pkg-config and cmake)
+Run-time dependency catch2 found: NO  (tried pkg-config and cmake)
+Looking for a fallback subproject for the dependency catch2
+Downloading catch2 source from https://github.com/catchorg/Catch2/archive/v3.7.0.tar.gz
+
+Executing subproject catch2 
+
+Project name: catch2
+Project version: 3.7.0
+C++ compiler for the host machine: c++ (gcc 16.1.1 "c++ (GCC) 16.1.1 20260430")
+C++ linker for the host machine: c++ ld.bfd 2.46.0
+Configuring catch_user_config.hpp using configuration
+Build targets in project: 10
+Subproject catch2 finished.
+
+Dependency catch2 for host machine from subproject subprojects/Catch2-3.7.0 found: YES 3.7.0
+Program clang-tidy found: YES (/usr/bin/clang-tidy)
+Build targets in project: 14
+
+waybar 0.15.0
+
+  Subprojects
+    catch2 : YES
+    libcava: YES 1 warnings
+
+Found ninja-1.13.2 at /usr/bin/ninja

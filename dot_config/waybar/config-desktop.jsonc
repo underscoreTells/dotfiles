@@ -1,7 +1,7 @@
 [
   {
     "reload_style_on_change": true,
-    "output": "HDMI-A-1",
+    "output": "DP-1",
     "width": 1440,
     "margin-top": 10,
     "layer": "top",
@@ -59,7 +59,7 @@
     "custom/files": {
       "format": "",
       "tooltip": false,
-      "on-click": "/usr/bin/dolphin",
+      "on-click": "/home/alext/.local/bin/dolphin",
     },
     "custom/zed": {
       "format": "",
@@ -163,7 +163,7 @@
     },
   },
   {
-    "output": "DP-1",
+    "output": "HDMI-A-1",
     "width": 810,
     "margin-top": 10,
     "layer": "top",

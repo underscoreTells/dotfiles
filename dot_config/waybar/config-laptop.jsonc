@@ -62,7 +62,7 @@
     "custom/files": {
       "format": "",
       "tooltip": false,
-      "on-click": "/usr/bin/dolphin",
+      "on-click": "/home/alext/.local/bin/dolphin",
     },
     "custom/zed": {
       "format": "",

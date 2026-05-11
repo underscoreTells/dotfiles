@@ -1,0 +1,59 @@
+[
+  {
+    "cmd": [
+      "/home/alext/.config/hypr/build/test/waybar_test"
+    ],
+    "env": {},
+    "name": "waybar",
+    "workdir": "/tmp/opencode/waybar-main",
+    "timeout": 30,
+    "suite": [
+      "waybar"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "9f86d08@@waybar_test@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/home/alext/.config/hypr/build/test/utils/utils_test"
+    ],
+    "env": {},
+    "name": "utils",
+    "workdir": "/tmp/opencode/waybar-main",
+    "timeout": 30,
+    "suite": [
+      "waybar"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "e00ed4e@@utils_test@exe"
+    ],
+    "extra_paths": []
+  },
+  {
+    "cmd": [
+      "/home/alext/.config/hypr/build/test/hyprland/hyprland_test"
+    ],
+    "env": {},
+    "name": "hyprland",
+    "workdir": "/tmp/opencode/waybar-main",
+    "timeout": 30,
+    "suite": [
+      "waybar"
+    ],
+    "is_parallel": true,
+    "priority": 0,
+    "protocol": "exitcode",
+    "depends": [
+      "84d34cc@@hyprland_test@exe"
+    ],
+    "extra_paths": []
+  }
+]

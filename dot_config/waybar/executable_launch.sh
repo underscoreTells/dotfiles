@@ -10,6 +10,8 @@ CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/waybar"
 DESKTOP_CFG="$CONFIG_DIR/config-desktop.jsonc"
 LAPTOP_CFG="$CONFIG_DIR/config-laptop.jsonc"
 STYLE="$CONFIG_DIR/style.css"
+WAYBAR_BIN="$CONFIG_DIR/bin/waybar"
+WAYBAR_LIB_DIR="$CONFIG_DIR/lib"
 
 # Optional: force profile via first argument
 PROFILE="${1:-}"
@@ -42,8 +44,14 @@ if [ ! -f "${CFG}" ] && [ -f "${CONFIG_DIR}/config.jsonc" ]; then
   CFG="${CONFIG_DIR}/config.jsonc"
 fi
 
-# Ensure waybar is available
-if ! command -v waybar >/dev/null 2>&1; then
+# Prefer a locally installed Waybar binary when present.
+if [ -x "${WAYBAR_BIN}" ]; then
+  WAYBAR_CMD="${WAYBAR_BIN}"
+  WAYBAR_ENV="LD_LIBRARY_PATH=${WAYBAR_LIB_DIR}${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+elif command -v waybar >/dev/null 2>&1; then
+  WAYBAR_CMD="$(command -v waybar)"
+  WAYBAR_ENV=""
+else
   printf '%s\n' "waybar not found in PATH; aborting launch." >&2
   exit 0
 fi
@@ -59,6 +67,10 @@ fi
 LOG_FILE="${XDG_STATE_HOME:-$HOME/.local/state}/waybar-launch.log"
 mkdir -p "$(dirname "${LOG_FILE}")" || true
 
-nohup waybar -c "${CFG}" -s "${STYLE}" >>"${LOG_FILE}" 2>&1 &
+if [ -n "${WAYBAR_ENV}" ]; then
+  nohup env ${WAYBAR_ENV} "${WAYBAR_CMD}" -c "${CFG}" -s "${STYLE}" >>"${LOG_FILE}" 2>&1 &
+else
+  nohup "${WAYBAR_CMD}" -c "${CFG}" -s "${STYLE}" >>"${LOG_FILE}" 2>&1 &
+fi
 
 exit 0

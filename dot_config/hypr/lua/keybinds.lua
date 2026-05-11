@@ -19,7 +19,7 @@ function M.apply(ctx)
   local secondary = ctx.vars.mods.secondary
 
   bind_exec(main .. " + RETURN", programs.terminal)
-  bind(secondary .. " + Q", hl.dsp.window.kill())
+  bind(secondary .. " + Q", hl.dsp.window.close(), { release = true })
   bind_exec(main .. " + U", programs.file_manager)
   bind(main .. " + V", hl.dsp.window.float())
   bind_exec(main .. " + SPACE", programs.menu)

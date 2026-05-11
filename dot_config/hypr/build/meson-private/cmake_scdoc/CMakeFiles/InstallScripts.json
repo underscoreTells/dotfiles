@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/alext/.config/hypr/build/meson-private/cmake_scdoc/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

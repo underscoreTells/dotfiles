@@ -1,0 +1,781 @@
+[
+  {
+    "name": "threads",
+    "type": "system",
+    "version": "unknown",
+    "compile_args": [
+      "-pthread"
+    ],
+    "link_args": [
+      "-pthread"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "thread_dep"
+    ]
+  },
+  {
+    "name": "fmt",
+    "type": "pkgconfig",
+    "version": "12.1.0",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libfmt.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "fmt"
+    ]
+  },
+  {
+    "name": "spdlog",
+    "type": "pkgconfig",
+    "version": "1.17.0",
+    "compile_args": [
+      "-DSPDLOG_SHARED_LIB",
+      "-DSPDLOG_COMPILED_LIB",
+      "-DSPDLOG_FMT_EXTERNAL"
+    ],
+    "link_args": [
+      "/usr/lib/libspdlog.so",
+      "-pthread",
+      "/usr/lib/libfmt.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "spdlog"
+    ]
+  },
+  {
+    "name": "wayland-client",
+    "type": "pkgconfig",
+    "version": "1.25.0",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libwayland-client.so",
+      "-lm"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "wayland_client"
+    ]
+  },
+  {
+    "name": "wayland-cursor",
+    "type": "pkgconfig",
+    "version": "1.25.0",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libwayland-cursor.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "wayland_cursor"
+    ]
+  },
+  {
+    "name": "wayland-protocols",
+    "type": "pkgconfig",
+    "version": "1.48",
+    "compile_args": [],
+    "link_args": [],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "wayland_protos"
+    ]
+  },
+  {
+    "name": "gtkmm-3.0",
+    "type": "pkgconfig",
+    "version": "3.24.10",
+    "compile_args": [
+      "-I/usr/include/gtkmm-3.0",
+      "-I/usr/lib/gtkmm-3.0/include",
+      "-I/usr/include/atkmm-1.6",
+      "-I/usr/lib/atkmm-1.6/include",
+      "-I/usr/include/gtk-3.0/unix-print",
+      "-I/usr/include/gdkmm-3.0",
+      "-I/usr/lib/gdkmm-3.0/include",
+      "-I/usr/include/giomm-2.4",
+      "-I/usr/lib/giomm-2.4/include",
+      "-I/usr/include/gtk-3.0",
+      "-I/usr/include/cloudproviders",
+      "-I/usr/include/cairo",
+      "-I/usr/include/at-spi2-atk/2.0",
+      "-I/usr/include/at-spi-2.0",
+      "-I/usr/include/atk-1.0",
+      "-I/usr/include/dbus-1.0",
+      "-I/usr/lib/dbus-1.0/include",
+      "-I/usr/include/gio-unix-2.0",
+      "-I/usr/include/pangomm-1.4",
+      "-I/usr/lib/pangomm-1.4/include",
+      "-I/usr/include/glibmm-2.4",
+      "-I/usr/lib/glibmm-2.4/include",
+      "-I/usr/include/cairomm-1.0",
+      "-I/usr/lib/cairomm-1.0/include",
+      "-I/usr/include/sigc++-2.0",
+      "-I/usr/lib/sigc++-2.0/include",
+      "-I/usr/include/pango-1.0",
+      "-I/usr/include/pixman-1",
+      "-I/usr/include/fribidi",
+      "-I/usr/include/harfbuzz",
+      "-I/usr/include/gdk-pixbuf-2.0",
+      "-I/usr/include/glycin-2",
+      "-I/usr/include/freetype2",
+      "-I/usr/include/libpng16",
+      "-I/usr/include/glib-2.0",
+      "-I/usr/lib/glib-2.0/include",
+      "-DWITH_GZFILEOP",
+      "-I/usr/include/libmount",
+      "-I/usr/include/blkid",
+      "-I/usr/include/sysprof-6",
+      "-pthread"
+    ],
+    "link_args": [
+      "/usr/lib/libgtkmm-3.0.so",
+      "/usr/lib/libatkmm-1.6.so",
+      "/usr/lib/libgdkmm-3.0.so",
+      "/usr/lib/libgiomm-2.4.so",
+      "/usr/lib/libgtk-3.so",
+      "/usr/lib/libgdk-3.so",
+      "/usr/lib/libcairo-gobject.so",
+      "/usr/lib/libatk-1.0.so",
+      "/usr/lib/libpangomm-1.4.so",
+      "/usr/lib/libglibmm-2.4.so",
+      "/usr/lib/libcairomm-1.0.so",
+      "/usr/lib/libsigc-2.0.so",
+      "/usr/lib/libpangocairo-1.0.so",
+      "/usr/lib/libpango-1.0.so",
+      "/usr/lib/libcairo.so",
+      "/usr/lib/libharfbuzz.so",
+      "/usr/lib/libgdk_pixbuf-2.0.so",
+      "/usr/lib/libgio-2.0.so",
+      "/usr/lib/libgobject-2.0.so",
+      "/usr/lib/libglib-2.0.so",
+      "/usr/lib/libz.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "gtkmm"
+    ]
+  },
+  {
+    "name": "dbusmenu-gtk3-0.4",
+    "type": "pkgconfig",
+    "version": "16.04.0",
+    "compile_args": [
+      "-I/usr/include/libdbusmenu-gtk3-0.4",
+      "-I/usr/include/libdbusmenu-glib-0.4",
+      "-I/usr/include/gtk-3.0",
+      "-I/usr/include/pango-1.0",
+      "-I/usr/include/cloudproviders",
+      "-I/usr/include/cairo",
+      "-I/usr/include/gdk-pixbuf-2.0",
+      "-I/usr/include/glycin-2",
+      "-I/usr/include/at-spi2-atk/2.0",
+      "-I/usr/include/at-spi-2.0",
+      "-I/usr/include/atk-1.0",
+      "-I/usr/include/dbus-1.0",
+      "-I/usr/lib/dbus-1.0/include",
+      "-I/usr/include/fribidi",
+      "-I/usr/include/pixman-1",
+      "-I/usr/include/harfbuzz",
+      "-I/usr/include/freetype2",
+      "-I/usr/include/libpng16",
+      "-I/usr/include/gio-unix-2.0",
+      "-I/usr/include/glib-2.0",
+      "-I/usr/lib/glib-2.0/include",
+      "-DWITH_GZFILEOP",
+      "-I/usr/include/libmount",
+      "-I/usr/include/blkid",
+      "-I/usr/include/sysprof-6",
+      "-pthread"
+    ],
+    "link_args": [
+      "/usr/lib/libdbusmenu-gtk3.so",
+      "/usr/lib/libdbusmenu-glib.so",
+      "/usr/lib/libgtk-3.so",
+      "/usr/lib/libgdk-3.so",
+      "/usr/lib/libpangocairo-1.0.so",
+      "/usr/lib/libcairo-gobject.so",
+      "/usr/lib/libgdk_pixbuf-2.0.so",
+      "/usr/lib/libatk-1.0.so",
+      "/usr/lib/libpango-1.0.so",
+      "/usr/lib/libcairo.so",
+      "/usr/lib/libharfbuzz.so",
+      "/usr/lib/libgio-2.0.so",
+      "/usr/lib/libgobject-2.0.so",
+      "/usr/lib/libglib-2.0.so",
+      "/usr/lib/libz.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "dbusmenu_gtk"
+    ]
+  },
+  {
+    "name": "gio-unix-2.0",
+    "type": "pkgconfig",
+    "version": "2.88.1",
+    "compile_args": [
+      "-I/usr/include/gio-unix-2.0",
+      "-I/usr/include/glib-2.0",
+      "-I/usr/lib/glib-2.0/include",
+      "-DWITH_GZFILEOP",
+      "-I/usr/include/libmount",
+      "-I/usr/include/blkid",
+      "-I/usr/include/sysprof-6",
+      "-pthread"
+    ],
+    "link_args": [
+      "/usr/lib/libgio-2.0.so",
+      "/usr/lib/libgobject-2.0.so",
+      "/usr/lib/libglib-2.0.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "giounix"
+    ]
+  },
+  {
+    "name": "jsoncpp",
+    "type": "pkgconfig",
+    "version": "1.9.6",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libjsoncpp.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "jsoncpp"
+    ]
+  },
+  {
+    "name": "sigc++-2.0",
+    "type": "pkgconfig",
+    "version": "2.12.1",
+    "compile_args": [
+      "-I/usr/include/sigc++-2.0",
+      "-I/usr/lib/sigc++-2.0/include"
+    ],
+    "link_args": [
+      "/usr/lib/libsigc-2.0.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "sigcpp"
+    ]
+  },
+  {
+    "name": "libinput",
+    "type": "pkgconfig",
+    "version": "1.31.1",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libinput.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libinput"
+    ]
+  },
+  {
+    "name": "libnl-3.0",
+    "type": "pkgconfig",
+    "version": "3.12.0",
+    "compile_args": [
+      "-I/usr/include/libnl3"
+    ],
+    "link_args": [
+      "/usr/lib/libnl-3.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libnl"
+    ]
+  },
+  {
+    "name": "libnl-genl-3.0",
+    "type": "pkgconfig",
+    "version": "3.12.0",
+    "compile_args": [
+      "-I/usr/include/libnl3"
+    ],
+    "link_args": [
+      "/usr/lib/libnl-genl-3.so",
+      "/usr/lib/libnl-3.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libnlgen"
+    ]
+  },
+  {
+    "name": "upower-glib",
+    "type": "pkgconfig",
+    "version": "1.91.2",
+    "compile_args": [
+      "-I/usr/include/libupower-glib",
+      "-I/usr/include/polkit-1",
+      "-I/usr/include/gio-unix-2.0",
+      "-DWITH_GZFILEOP",
+      "-I/usr/include/libmount",
+      "-I/usr/include/blkid",
+      "-I/usr/include/glib-2.0",
+      "-I/usr/lib/glib-2.0/include",
+      "-I/usr/include/sysprof-6",
+      "-pthread"
+    ],
+    "link_args": [
+      "/usr/lib/libupower-glib.so",
+      "/usr/lib/libpolkit-gobject-1.so",
+      "/usr/lib/libgio-2.0.so",
+      "/usr/lib/libgobject-2.0.so",
+      "/usr/lib/libglib-2.0.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "upower_glib"
+    ]
+  },
+  {
+    "name": "libpipewire-0.3",
+    "type": "pkgconfig",
+    "version": "1.6.4",
+    "compile_args": [
+      "-I/usr/include/pipewire-0.3",
+      "-I/usr/include/spa-0.2",
+      "-D_REENTRANT",
+      "-fno-strict-aliasing",
+      "-fno-strict-overflow"
+    ],
+    "link_args": [
+      "/usr/lib/libpipewire-0.3.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "pipewire"
+    ]
+  },
+  {
+    "name": "playerctl",
+    "type": "pkgconfig",
+    "version": "2.4.1",
+    "compile_args": [
+      "-I/usr/include/playerctl",
+      "-I/usr/include/gio-unix-2.0",
+      "-I/usr/include/glib-2.0",
+      "-I/usr/lib/glib-2.0/include",
+      "-DWITH_GZFILEOP",
+      "-I/usr/include/libmount",
+      "-I/usr/include/blkid",
+      "-I/usr/include/sysprof-6",
+      "-pthread"
+    ],
+    "link_args": [
+      "/usr/lib/libplayerctl.so",
+      "/usr/lib/libgobject-2.0.so",
+      "/usr/lib/libglib-2.0.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "playerctl"
+    ]
+  },
+  {
+    "name": "libpulse",
+    "type": "pkgconfig",
+    "version": "17.0-98-gb096",
+    "compile_args": [
+      "-D_REENTRANT"
+    ],
+    "link_args": [
+      "/usr/lib/libpulse.so",
+      "-pthread"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libpulse"
+    ]
+  },
+  {
+    "name": "libudev",
+    "type": "pkgconfig",
+    "version": "260",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libudev.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libudev"
+    ]
+  },
+  {
+    "name": "libevdev",
+    "type": "pkgconfig",
+    "version": "1.13.6",
+    "compile_args": [
+      "-I/usr/include/libevdev-1.0"
+    ],
+    "link_args": [
+      "/usr/lib/libevdev.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libevdev"
+    ]
+  },
+  {
+    "name": "libmpdclient",
+    "type": "pkgconfig",
+    "version": "2.23",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libmpdclient.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libmpdclient"
+    ]
+  },
+  {
+    "name": "xkbregistry",
+    "type": "pkgconfig",
+    "version": "1.13.1",
+    "compile_args": [
+      "-I/usr/include/libxml2",
+      "-DWITH_GZFILEOP"
+    ],
+    "link_args": [
+      "/usr/lib/libxkbregistry.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "xkbregistry"
+    ]
+  },
+  {
+    "name": "jack",
+    "type": "pkgconfig",
+    "version": "1.9.22",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libjack.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libjack"
+    ]
+  },
+  {
+    "name": "wireplumber-0.5",
+    "type": "pkgconfig",
+    "version": "0.5.14",
+    "compile_args": [
+      "-I/usr/include/wireplumber-0.5",
+      "-DWITH_GZFILEOP",
+      "-I/usr/include/libmount",
+      "-I/usr/include/blkid",
+      "-I/usr/include/glib-2.0",
+      "-I/usr/lib/glib-2.0/include",
+      "-I/usr/include/sysprof-6",
+      "-pthread",
+      "-I/usr/include/pipewire-0.3",
+      "-I/usr/include/spa-0.2",
+      "-D_REENTRANT",
+      "-fno-strict-aliasing",
+      "-fno-strict-overflow"
+    ],
+    "link_args": [
+      "/usr/lib/libwireplumber-0.5.so",
+      "/usr/lib/libgio-2.0.so",
+      "/usr/lib/libgobject-2.0.so",
+      "/usr/lib/libglib-2.0.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libwireplumber"
+    ]
+  },
+  {
+    "name": "libgps",
+    "type": "pkgconfig",
+    "version": "3.27.5",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libgps.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "libgps"
+    ]
+  },
+  {
+    "name": "gtk-layer-shell-0",
+    "type": "pkgconfig",
+    "version": "0.10.1",
+    "compile_args": [
+      "-I/usr/include/gtk-layer-shell",
+      "-I/usr/include/gtk-3.0",
+      "-I/usr/include/pango-1.0",
+      "-I/usr/include/cloudproviders",
+      "-I/usr/include/cairo",
+      "-I/usr/include/gdk-pixbuf-2.0",
+      "-I/usr/include/glycin-2",
+      "-I/usr/include/at-spi2-atk/2.0",
+      "-I/usr/include/at-spi-2.0",
+      "-I/usr/include/atk-1.0",
+      "-I/usr/include/dbus-1.0",
+      "-I/usr/lib/dbus-1.0/include",
+      "-I/usr/include/fribidi",
+      "-I/usr/include/pixman-1",
+      "-I/usr/include/harfbuzz",
+      "-I/usr/include/freetype2",
+      "-I/usr/include/libpng16",
+      "-I/usr/include/gio-unix-2.0",
+      "-I/usr/include/glib-2.0",
+      "-I/usr/lib/glib-2.0/include",
+      "-DWITH_GZFILEOP",
+      "-I/usr/include/libmount",
+      "-I/usr/include/blkid",
+      "-I/usr/include/sysprof-6",
+      "-pthread"
+    ],
+    "link_args": [
+      "/usr/lib/libgtk-layer-shell.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "gtk_layer_shell"
+    ]
+  },
+  {
+    "name": "systemd",
+    "type": "pkgconfig",
+    "version": "260",
+    "compile_args": [],
+    "link_args": [],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "systemd"
+    ]
+  },
+  {
+    "name": "fftw3",
+    "type": "pkgconfig",
+    "version": "3.3.11",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libfftw3.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": []
+  },
+  {
+    "name": "ncursesw",
+    "type": "pkgconfig",
+    "version": "6.6.20251230",
+    "compile_args": [
+      "-D_DEFAULT_SOURCE",
+      "-D_XOPEN_SOURCE=600"
+    ],
+    "link_args": [
+      "-lncursesw"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": []
+  },
+  {
+    "name": "sdl2",
+    "type": "pkgconfig",
+    "version": "2.32.68",
+    "compile_args": [
+      "-I/usr/include/SDL2",
+      "-D_GNU_SOURCE=1",
+      "-D_REENTRANT"
+    ],
+    "link_args": [
+      "/usr/lib/libSDL2.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": []
+  },
+  {
+    "name": "gl",
+    "type": "pkgconfig",
+    "version": "1.2",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libGL.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": []
+  },
+  {
+    "name": "epoxy",
+    "type": "pkgconfig",
+    "version": "1.5.10",
+    "compile_args": [],
+    "link_args": [
+      "/usr/lib/libepoxy.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": [
+      "eproxy"
+    ]
+  },
+  {
+    "name": "gio-2.0",
+    "type": "pkgconfig",
+    "version": "2.88.1",
+    "compile_args": [
+      "-I/usr/include/glib-2.0",
+      "-I/usr/lib/glib-2.0/include",
+      "-DWITH_GZFILEOP",
+      "-I/usr/include/libmount",
+      "-I/usr/include/blkid",
+      "-I/usr/include/sysprof-6",
+      "-pthread"
+    ],
+    "link_args": [
+      "/usr/lib/libgio-2.0.so",
+      "/usr/lib/libgobject-2.0.so",
+      "/usr/lib/libglib-2.0.so"
+    ],
+    "include_directories": [],
+    "sources": [],
+    "extra_files": [],
+    "dependencies": [],
+    "depends": [],
+    "meson_variables": []
+  }
+]

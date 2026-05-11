@@ -1,0 +1,2 @@
+/home/alext/.config/hypr/build/meson-private/cmake_libinotify/CMakeFiles/edit_cache.dir
+/home/alext/.config/hypr/build/meson-private/cmake_libinotify/CMakeFiles/rebuild_cache.dir

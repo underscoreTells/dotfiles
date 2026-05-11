@@ -1,0 +1,571 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/alext/.opencode/bin/"
+      - "/home/alext/.bun/bin/"
+      - "/home/alext/.local/share/pnpm/"
+      - "/home/alext/.local/bin/"
+      - "/home/alext/bin/"
+      - "/home/alext/.cargo/bin/"
+      - "/home/alext/.git_packages/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/home/alext/.opencode/bin/uname"
+      - "/home/alext/.bun/bin/uname"
+      - "/home/alext/.local/share/pnpm/uname"
+      - "/home/alext/.local/bin/uname"
+      - "/home/alext/bin/uname"
+      - "/home/alext/.cargo/bin/uname"
+      - "/home/alext/.git_packages/uname"
+      - "/home/linuxbrew/.linuxbrew/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.bun/bin"
+        - "/home/alext/.local/share/pnpm"
+        - "/home/alext/.local/bin"
+        - "/home/alext/bin"
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.cargo/bin"
+        - "/home/alext/.git_packages"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 7.0.6-1-cachyos - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/home/alext/.opencode/bin/"
+      - "/home/alext/.bun/bin/"
+      - "/home/alext/.local/share/pnpm/"
+      - "/home/alext/.local/bin/"
+      - "/home/alext/bin/"
+      - "/home/alext/.cargo/bin/"
+      - "/home/alext/.git_packages/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+    searched_directories:
+      - "/home/alext/.opencode/bin/gmake"
+      - "/home/alext/.bun/bin/gmake"
+      - "/home/alext/.local/share/pnpm/gmake"
+      - "/home/alext/.local/bin/gmake"
+      - "/home/alext/bin/gmake"
+      - "/home/alext/.cargo/bin/gmake"
+      - "/home/alext/.git_packages/gmake"
+      - "/home/linuxbrew/.linuxbrew/bin/gmake"
+      - "/usr/local/sbin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/usr/lib/jvm/default/bin/gmake"
+      - "/usr/bin/site_perl/gmake"
+      - "/usr/bin/vendor_perl/gmake"
+      - "/usr/bin/core_perl/gmake"
+      - "/var/lib/snapd/snap/bin/gmake"
+      - "/home/alext/.opencode/bin/make"
+      - "/home/alext/.bun/bin/make"
+      - "/home/alext/.local/share/pnpm/make"
+      - "/home/alext/.local/bin/make"
+      - "/home/alext/bin/make"
+      - "/home/alext/.cargo/bin/make"
+      - "/home/alext/.git_packages/make"
+      - "/home/linuxbrew/.linuxbrew/bin/make"
+      - "/usr/local/sbin/make"
+      - "/usr/local/bin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.bun/bin"
+        - "/home/alext/.local/share/pnpm"
+        - "/home/alext/.local/bin"
+        - "/home/alext/bin"
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.cargo/bin"
+        - "/home/alext/.git_packages"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/alext/.opencode/bin/"
+      - "/home/alext/.bun/bin/"
+      - "/home/alext/.local/share/pnpm/"
+      - "/home/alext/.local/bin/"
+      - "/home/alext/bin/"
+      - "/home/alext/.cargo/bin/"
+      - "/home/alext/.git_packages/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.bun/bin"
+        - "/home/alext/.local/share/pnpm"
+        - "/home/alext/.local/bin"
+        - "/home/alext/bin"
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.cargo/bin"
+        - "/home/alext/.git_packages"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/alext/.opencode/bin/"
+      - "/home/alext/.bun/bin/"
+      - "/home/alext/.local/share/pnpm/"
+      - "/home/alext/.local/bin/"
+      - "/home/alext/bin/"
+      - "/home/alext/.cargo/bin/"
+      - "/home/alext/.git_packages/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.bun/bin"
+        - "/home/alext/.local/share/pnpm"
+        - "/home/alext/.local/bin"
+        - "/home/alext/bin"
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.cargo/bin"
+        - "/home/alext/.git_packages"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/alext/.opencode/bin/"
+      - "/home/alext/.bun/bin/"
+      - "/home/alext/.local/share/pnpm/"
+      - "/home/alext/.local/bin/"
+      - "/home/alext/bin/"
+      - "/home/alext/.cargo/bin/"
+      - "/home/alext/.git_packages/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.bun/bin"
+        - "/home/alext/.local/share/pnpm"
+        - "/home/alext/.local/bin"
+        - "/home/alext/bin"
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.cargo/bin"
+        - "/home/alext/.git_packages"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/alext/.opencode/bin/"
+      - "/home/alext/.bun/bin/"
+      - "/home/alext/.local/share/pnpm/"
+      - "/home/alext/.local/bin/"
+      - "/home/alext/bin/"
+      - "/home/alext/.cargo/bin/"
+      - "/home/alext/.git_packages/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.bun/bin"
+        - "/home/alext/.local/share/pnpm"
+        - "/home/alext/.local/bin"
+        - "/home/alext/bin"
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.cargo/bin"
+        - "/home/alext/.git_packages"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/alext/.opencode/bin/"
+      - "/home/alext/.bun/bin/"
+      - "/home/alext/.local/share/pnpm/"
+      - "/home/alext/.local/bin/"
+      - "/home/alext/bin/"
+      - "/home/alext/.cargo/bin/"
+      - "/home/alext/.git_packages/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/readelf"
+    search_context:
+      ENV{PATH}:
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.bun/bin"
+        - "/home/alext/.local/share/pnpm"
+        - "/home/alext/.local/bin"
+        - "/home/alext/bin"
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.cargo/bin"
+        - "/home/alext/.git_packages"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/alext/.opencode/bin/"
+      - "/home/alext/.bun/bin/"
+      - "/home/alext/.local/share/pnpm/"
+      - "/home/alext/.local/bin/"
+      - "/home/alext/bin/"
+      - "/home/alext/.cargo/bin/"
+      - "/home/alext/.git_packages/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/home/alext/.opencode/bin/dlltool"
+      - "/home/alext/.bun/bin/dlltool"
+      - "/home/alext/.local/share/pnpm/dlltool"
+      - "/home/alext/.local/bin/dlltool"
+      - "/home/alext/bin/dlltool"
+      - "/home/alext/.cargo/bin/dlltool"
+      - "/home/alext/.git_packages/dlltool"
+      - "/home/linuxbrew/.linuxbrew/bin/dlltool"
+      - "/usr/local/sbin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/usr/lib/jvm/default/bin/dlltool"
+      - "/usr/bin/site_perl/dlltool"
+      - "/usr/bin/vendor_perl/dlltool"
+      - "/usr/bin/core_perl/dlltool"
+      - "/var/lib/snapd/snap/bin/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.bun/bin"
+        - "/home/alext/.local/share/pnpm"
+        - "/home/alext/.local/bin"
+        - "/home/alext/bin"
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.cargo/bin"
+        - "/home/alext/.git_packages"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/alext/.opencode/bin/"
+      - "/home/alext/.bun/bin/"
+      - "/home/alext/.local/share/pnpm/"
+      - "/home/alext/.local/bin/"
+      - "/home/alext/bin/"
+      - "/home/alext/.cargo/bin/"
+      - "/home/alext/.git_packages/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/var/lib/snapd/snap/bin/"
+    found: "/usr/bin/addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.bun/bin"
+        - "/home/alext/.local/share/pnpm"
+        - "/home/alext/.local/bin"
+        - "/home/alext/bin"
+        - "/home/alext/.opencode/bin"
+        - "/home/alext/.cargo/bin"
+        - "/home/alext/.git_packages"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/var/lib/snapd/snap/bin"
+...

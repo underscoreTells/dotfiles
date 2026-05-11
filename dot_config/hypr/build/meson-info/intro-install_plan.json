@@ -1,0 +1,975 @@
+{
+  "targets": {
+    "/home/alext/.config/hypr/build/subprojects/cava-0.10.7/libcava.so.0.10.7": {
+      "destination": "{libdir_shared}/libcava.so.0.10.7",
+      "tag": "runtime",
+      "subproject": "libcava",
+      "install_rpath": null,
+      "build_rpaths": []
+    },
+    "/home/alext/.config/hypr/build/waybar": {
+      "destination": "{bindir}/waybar",
+      "tag": "runtime",
+      "subproject": null,
+      "install_rpath": null,
+      "build_rpaths": [
+        "$ORIGIN/subprojects/cava-0.10.7"
+      ]
+    },
+    "/home/alext/.config/hypr/build/subprojects/Catch2-3.7.0/src/catch2/libCatch2.a": {
+      "destination": "{libdir_static}/libCatch2.a",
+      "tag": "devel",
+      "subproject": "catch2",
+      "install_rpath": null,
+      "build_rpaths": []
+    },
+    "/home/alext/.config/hypr/build/subprojects/Catch2-3.7.0/src/catch2/libCatch2Main.a": {
+      "destination": "{libdir_static}/libCatch2Main.a",
+      "tag": "devel",
+      "subproject": "catch2",
+      "install_rpath": null,
+      "build_rpaths": []
+    }
+  },
+  "configure": {
+    "/home/alext/.config/hypr/build/waybar.service": {
+      "destination": "/usr/lib/systemd/user/waybar.service",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/alext/.config/hypr/build/subprojects/Catch2-3.7.0/src/catch2/catch_user_config.hpp": {
+      "destination": "{includedir}/catch2/catch_user_config.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    }
+  },
+  "data": {
+    "/home/alext/.config/hypr/build/meson-private/libcava.pc": {
+      "destination": "{libdir}/pkgconfig/libcava.pc",
+      "tag": "devel",
+      "subproject": "libcava"
+    },
+    "/tmp/opencode/waybar-main/resources/config.jsonc": {
+      "destination": "{sysconfdir}/xdg/waybar/config.jsonc",
+      "tag": null,
+      "subproject": null
+    },
+    "/tmp/opencode/waybar-main/resources/style.css": {
+      "destination": "{sysconfdir}/xdg/waybar/style.css",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/alext/.config/hypr/build/meson-private/catch2.pc": {
+      "destination": "{libdir}/pkgconfig/catch2.pc",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/home/alext/.config/hypr/build/meson-private/catch2-with-main.pc": {
+      "destination": "{libdir}/pkgconfig/catch2-with-main.pc",
+      "tag": "devel",
+      "subproject": "catch2"
+    }
+  },
+  "headers": {
+    "/tmp/opencode/waybar-main/subprojects/cava-0.10.7/include/cava/cavacore.h": {
+      "destination": "{includedir}/cava/cavacore.h",
+      "tag": "devel",
+      "subproject": "libcava"
+    },
+    "/tmp/opencode/waybar-main/subprojects/cava-0.10.7/include/cava/common.h": {
+      "destination": "{includedir}/cava/common.h",
+      "tag": "devel",
+      "subproject": "libcava"
+    },
+    "/tmp/opencode/waybar-main/subprojects/cava-0.10.7/include/cava/config.h": {
+      "destination": "{includedir}/cava/config.h",
+      "tag": "devel",
+      "subproject": "libcava"
+    },
+    "/tmp/opencode/waybar-main/subprojects/cava-0.10.7/include/cava/input/common.h": {
+      "destination": "{includedir}/cava/input/common.h",
+      "tag": "devel",
+      "subproject": "libcava"
+    },
+    "/tmp/opencode/waybar-main/subprojects/cava-0.10.7/include/cava/output/common.h": {
+      "destination": "{includedir}/cava/output/common.h",
+      "tag": "devel",
+      "subproject": "libcava"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/catch_benchmark.hpp": {
+      "destination": "{includedir}/catch2/benchmark/catch_benchmark.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/catch_benchmark_all.hpp": {
+      "destination": "{includedir}/catch2/benchmark/catch_benchmark_all.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/catch_chronometer.hpp": {
+      "destination": "{includedir}/catch2/benchmark/catch_chronometer.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/catch_clock.hpp": {
+      "destination": "{includedir}/catch2/benchmark/catch_clock.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/catch_constructor.hpp": {
+      "destination": "{includedir}/catch2/benchmark/catch_constructor.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/catch_environment.hpp": {
+      "destination": "{includedir}/catch2/benchmark/catch_environment.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/catch_estimate.hpp": {
+      "destination": "{includedir}/catch2/benchmark/catch_estimate.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/catch_execution_plan.hpp": {
+      "destination": "{includedir}/catch2/benchmark/catch_execution_plan.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/catch_optimizer.hpp": {
+      "destination": "{includedir}/catch2/benchmark/catch_optimizer.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/catch_outlier_classification.hpp": {
+      "destination": "{includedir}/catch2/benchmark/catch_outlier_classification.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/catch_sample_analysis.hpp": {
+      "destination": "{includedir}/catch2/benchmark/catch_sample_analysis.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/detail/catch_analyse.hpp": {
+      "destination": "{includedir}/catch2/benchmark/detail/catch_analyse.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/detail/catch_benchmark_function.hpp": {
+      "destination": "{includedir}/catch2/benchmark/detail/catch_benchmark_function.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/detail/catch_benchmark_stats.hpp": {
+      "destination": "{includedir}/catch2/benchmark/detail/catch_benchmark_stats.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/detail/catch_benchmark_stats_fwd.hpp": {
+      "destination": "{includedir}/catch2/benchmark/detail/catch_benchmark_stats_fwd.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/detail/catch_complete_invoke.hpp": {
+      "destination": "{includedir}/catch2/benchmark/detail/catch_complete_invoke.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/detail/catch_estimate_clock.hpp": {
+      "destination": "{includedir}/catch2/benchmark/detail/catch_estimate_clock.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/detail/catch_measure.hpp": {
+      "destination": "{includedir}/catch2/benchmark/detail/catch_measure.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/detail/catch_repeat.hpp": {
+      "destination": "{includedir}/catch2/benchmark/detail/catch_repeat.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/detail/catch_run_for_at_least.hpp": {
+      "destination": "{includedir}/catch2/benchmark/detail/catch_run_for_at_least.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/detail/catch_stats.hpp": {
+      "destination": "{includedir}/catch2/benchmark/detail/catch_stats.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/benchmark/detail/catch_timing.hpp": {
+      "destination": "{includedir}/catch2/benchmark/detail/catch_timing.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/generators/catch_generator_exception.hpp": {
+      "destination": "{includedir}/catch2/generators/catch_generator_exception.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/generators/catch_generators.hpp": {
+      "destination": "{includedir}/catch2/generators/catch_generators.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/generators/catch_generators_adapters.hpp": {
+      "destination": "{includedir}/catch2/generators/catch_generators_adapters.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/generators/catch_generators_all.hpp": {
+      "destination": "{includedir}/catch2/generators/catch_generators_all.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/generators/catch_generators_random.hpp": {
+      "destination": "{includedir}/catch2/generators/catch_generators_random.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/generators/catch_generators_range.hpp": {
+      "destination": "{includedir}/catch2/generators/catch_generators_range.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_all.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_all.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_capture.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_capture.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_config.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_config.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_enum_values_registry.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_enum_values_registry.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_exception.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_exception.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_generatortracker.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_generatortracker.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_registry_hub.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_registry_hub.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_reporter.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_reporter.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_reporter_factory.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_reporter_factory.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_tag_alias_registry.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_tag_alias_registry.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_test_invoker.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_test_invoker.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/interfaces/catch_interfaces_testcase.hpp": {
+      "destination": "{includedir}/catch2/interfaces/catch_interfaces_testcase.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_assertion_handler.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_assertion_handler.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_case_insensitive_comparisons.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_case_insensitive_comparisons.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_clara.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_clara.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_commandline.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_commandline.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_compare_traits.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_compare_traits.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_compiler_capabilities.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_compiler_capabilities.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_config_android_logwrite.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_config_android_logwrite.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_config_counter.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_config_counter.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_config_static_analysis_support.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_config_static_analysis_support.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_config_uncaught_exceptions.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_config_uncaught_exceptions.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_config_wchar.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_config_wchar.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_console_colour.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_console_colour.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_console_width.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_console_width.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_container_nonmembers.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_container_nonmembers.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_context.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_context.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_debug_console.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_debug_console.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_debugger.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_debugger.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_decomposer.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_decomposer.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_enforce.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_enforce.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_enum_values_registry.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_enum_values_registry.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_errno_guard.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_errno_guard.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_exception_translator_registry.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_exception_translator_registry.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_fatal_condition_handler.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_fatal_condition_handler.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_floating_point_helpers.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_floating_point_helpers.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_getenv.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_getenv.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_istream.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_istream.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_is_permutation.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_is_permutation.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_jsonwriter.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_jsonwriter.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_lazy_expr.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_lazy_expr.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_leak_detector.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_leak_detector.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_list.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_list.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_logical_traits.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_logical_traits.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_message_info.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_message_info.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_meta.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_meta.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_move_and_forward.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_move_and_forward.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_noncopyable.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_noncopyable.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_optional.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_optional.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_output_redirect.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_output_redirect.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_parse_numbers.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_parse_numbers.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_platform.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_platform.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_polyfills.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_polyfills.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_preprocessor.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_preprocessor.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_preprocessor_internal_stringify.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_preprocessor_internal_stringify.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_preprocessor_remove_parens.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_preprocessor_remove_parens.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_random_floating_point_helpers.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_random_floating_point_helpers.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_random_integer_helpers.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_random_integer_helpers.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_random_number_generator.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_random_number_generator.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_random_seed_generation.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_random_seed_generation.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_reporter_registry.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_reporter_registry.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_reporter_spec_parser.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_reporter_spec_parser.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_result_type.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_result_type.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_reusable_string_stream.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_reusable_string_stream.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_run_context.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_run_context.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_section.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_section.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_sharding.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_sharding.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_singletons.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_singletons.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_source_line_info.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_source_line_info.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_startup_exception_registry.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_startup_exception_registry.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_stdstreams.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_stdstreams.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_stream_end_stop.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_stream_end_stop.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_string_manip.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_string_manip.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_stringref.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_stringref.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_tag_alias_registry.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_tag_alias_registry.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_template_test_registry.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_template_test_registry.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_test_case_info_hasher.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_test_case_info_hasher.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_test_case_registry_impl.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_test_case_registry_impl.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_test_case_tracker.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_test_case_tracker.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_test_failure_exception.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_test_failure_exception.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_test_macro_impl.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_test_macro_impl.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_test_registry.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_test_registry.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_test_run_info.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_test_run_info.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_test_spec_parser.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_test_spec_parser.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_textflow.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_textflow.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_to_string.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_to_string.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_uncaught_exceptions.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_uncaught_exceptions.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_uniform_floating_point_distribution.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_uniform_floating_point_distribution.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_uniform_integer_distribution.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_uniform_integer_distribution.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_unique_name.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_unique_name.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_unique_ptr.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_unique_ptr.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_void_type.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_void_type.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_wildcard_pattern.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_wildcard_pattern.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_windows_h_proxy.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_windows_h_proxy.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/internal/catch_xmlwriter.hpp": {
+      "destination": "{includedir}/catch2/internal/catch_xmlwriter.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers_all.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers_all.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers_container_properties.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers_container_properties.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers_contains.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers_contains.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers_exception.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers_exception.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers_floating_point.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers_floating_point.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers_predicate.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers_predicate.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers_quantifiers.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers_quantifiers.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers_range_equals.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers_range_equals.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers_string.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers_string.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers_templated.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers_templated.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/catch_matchers_vector.hpp": {
+      "destination": "{includedir}/catch2/matchers/catch_matchers_vector.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/matchers/internal/catch_matchers_impl.hpp": {
+      "destination": "{includedir}/catch2/matchers/internal/catch_matchers_impl.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_all.hpp": {
+      "destination": "{includedir}/catch2/catch_all.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_approx.hpp": {
+      "destination": "{includedir}/catch2/catch_approx.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_assertion_info.hpp": {
+      "destination": "{includedir}/catch2/catch_assertion_info.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_assertion_result.hpp": {
+      "destination": "{includedir}/catch2/catch_assertion_result.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_case_sensitive.hpp": {
+      "destination": "{includedir}/catch2/catch_case_sensitive.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_config.hpp": {
+      "destination": "{includedir}/catch2/catch_config.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_get_random_seed.hpp": {
+      "destination": "{includedir}/catch2/catch_get_random_seed.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_message.hpp": {
+      "destination": "{includedir}/catch2/catch_message.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_section_info.hpp": {
+      "destination": "{includedir}/catch2/catch_section_info.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_session.hpp": {
+      "destination": "{includedir}/catch2/catch_session.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_tag_alias.hpp": {
+      "destination": "{includedir}/catch2/catch_tag_alias.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_tag_alias_autoregistrar.hpp": {
+      "destination": "{includedir}/catch2/catch_tag_alias_autoregistrar.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_template_test_macros.hpp": {
+      "destination": "{includedir}/catch2/catch_template_test_macros.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_test_case_info.hpp": {
+      "destination": "{includedir}/catch2/catch_test_case_info.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_test_macros.hpp": {
+      "destination": "{includedir}/catch2/catch_test_macros.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_test_spec.hpp": {
+      "destination": "{includedir}/catch2/catch_test_spec.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_timer.hpp": {
+      "destination": "{includedir}/catch2/catch_timer.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_tostring.hpp": {
+      "destination": "{includedir}/catch2/catch_tostring.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_totals.hpp": {
+      "destination": "{includedir}/catch2/catch_totals.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_translate_exception.hpp": {
+      "destination": "{includedir}/catch2/catch_translate_exception.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_version.hpp": {
+      "destination": "{includedir}/catch2/catch_version.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/catch_version_macros.hpp": {
+      "destination": "{includedir}/catch2/catch_version_macros.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_automake.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_automake.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_common_base.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_common_base.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_compact.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_compact.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_console.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_console.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_cumulative_base.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_cumulative_base.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_event_listener.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_event_listener.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_helpers.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_helpers.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_json.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_json.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_junit.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_junit.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_multi.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_multi.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_registrars.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_registrars.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_sonarqube.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_sonarqube.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_streaming_base.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_streaming_base.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_tap.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_tap.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_teamcity.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_teamcity.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporter_xml.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporter_xml.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    },
+    "/tmp/opencode/waybar-main/subprojects/Catch2-3.7.0/src/catch2/reporters/catch_reporters_all.hpp": {
+      "destination": "{includedir}/catch2/reporters/catch_reporters_all.hpp",
+      "tag": "devel",
+      "subproject": "catch2"
+    }
+  }
+}

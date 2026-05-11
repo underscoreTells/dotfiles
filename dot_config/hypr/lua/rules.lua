@@ -17,7 +17,7 @@ function M.apply(_ctx)
       fullscreen = false,
       pin = false,
     },
-    no_focus = true,
+    no_initial_focus = true,
   })
 
   hl.window_rule({

@@ -1,0 +1,21 @@
+{
+  "version": "0.15.0",
+  "descriptive_name": "waybar",
+  "license": [
+    "MIT"
+  ],
+  "license_files": [],
+  "subproject_dir": "subprojects",
+  "subprojects": [
+    {
+      "name": "libcava",
+      "version": "0.10.7",
+      "descriptive_name": "cava"
+    },
+    {
+      "name": "catch2",
+      "version": "3.7.0",
+      "descriptive_name": "catch2"
+    }
+  ]
+}

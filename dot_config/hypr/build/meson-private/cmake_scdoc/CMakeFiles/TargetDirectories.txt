@@ -1,0 +1,2 @@
+/home/alext/.config/hypr/build/meson-private/cmake_scdoc/CMakeFiles/edit_cache.dir
+/home/alext/.config/hypr/build/meson-private/cmake_scdoc/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,10 @@
+prefix=/home/alext/.config/hypr/build
+includedir=${prefix}/include
+libdir=${prefix}/lib
+srcdir=/tmp/opencode/waybar-main
+
+Name: libcava
+Description: A cava library
+Version: 0.10.7
+Libs: -L${prefix}/subprojects/cava-0.10.7 -lcava
+Cflags: -I${prefix}/subprojects/cava-0.10.7/include -I${srcdir}/subprojects/cava-0.10.7/include -I${prefix}/subprojects/cava-0.10.7 -I${srcdir}/subprojects/cava-0.10.7
