@@ -1,0 +1,15 @@
+#!/bin/bash
+# Screenshot script that captures an area and opens it in swappy for editing
+
+SCREENSHOT_DIR="$HOME/Pictures/Screenshots"
+mkdir -p "$SCREENSHOT_DIR"
+
+FILENAME="$SCREENSHOT_DIR/screenshot-$(date +%Y%m%d-%H%M%S).png"
+
+# Capture selected area and pipe to swappy
+grim -g "$(slurp)" - | swappy -f - -o "$FILENAME"
+
+# If swappy saved the file, notify user
+if [ -f "$FILENAME" ]; then
+    notify-send "Screenshot saved" "$FILENAME"
+fi

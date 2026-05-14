@@ -12,7 +12,7 @@ function M.apply(_ctx)
     input = {
       sensitivity = 0.5,
       touchpad = {
-        natural_scroll = false,
+        natural_scroll = true,
         tap_to_click = true,
         disable_while_typing = true,
       },
